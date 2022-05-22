@@ -1,0 +1,45 @@
+.container {
+  background-color: #ccc;
+  width: 30%;
+  height: 270px;
+  border-radius: 5px;
+  float: left;
+  margin: 10px;
+
+  > p > img {
+    width: 200px;
+    height: 120px;
+    text-align: center;
+  }
+
+  > h3,
+  h4 {
+    text-align: center;
+  }
+}
+
+.parent {
+  overflow: hidden;
+  margin: 10%;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 880px) and (min-width: 769px) {
+  .container {
+    > p > img {
+      width: 160px;
+      height: 100px;
+    }
+  }
+}
+
+.loading {
+  z-index: -1;
+  background: transparent;
+}
