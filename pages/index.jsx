@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "../styles/Home.module.scss";
 import style from "../styles/Form.module.scss";
+import Head from 'next/head';
 
 export default function Home() {
   const [value, setValue] = useState("");
@@ -18,6 +19,9 @@ export default function Home() {
   });
   return (
     <>
+    <Head>
+    <title>Countries</title>
+    </Head>
       <div className={styles.parent}>
         <div className={style.form}>
           <input
